@@ -10,7 +10,7 @@ main {
 
     .logo-section {
         position: relative;
-        flex: 0.5;
+        flex: 0.7;
         text-align: center;
     }
         .logo {
@@ -26,13 +26,50 @@ main {
     .form-section {
         flex: 1;
     }
+
     .form-section > div {
-        margin-left: 50px;
-        
+        padding-left: 50px;
     }
+
+        .top {
+            height: 30vh;
+        }
 
         .middle {
             background-color: aquamarine;
             width: 100%;
+            height: 32vh;
         }
+
+            .form-header {
+                font-size: 30px;
+                font-weight: bold;
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+
+            form {
+                position: relative;
+                display: flex;
+                gap: 90px;
+            }
+                
+                form > div {
+                    width: 13vw;
+                }
+
+                .form-main > div {
+                    padding: 15px 0;
+                }
+
+                input {
+                    height: 20px;
+                    width: 100%;
+                }
+
+            input, label {
+                display: block;
+            }    
+
+        .bottom {}
 
