@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    height: 100%;
+}
+
+    .logo-section {
+        position: relative;
+        flex: 0.5;
+        text-align: center;
+    }
+        .logo {
+            position: absolute;
+            width: 100%;
+            font-size: 4rem;
+            font-weight: bold;
+            background-color: bisque;
+            padding: 1rem 0;
+            top: 200px;
+        }
+    
+    .form-section {
+        flex: 1;
+    }
+    .form-section > div {
+        margin-left: 50px;
+        
+    }
+
+        .middle {
+            background-color: aquamarine;
+            width: 100%;
+        }
+
