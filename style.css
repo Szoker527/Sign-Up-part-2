@@ -299,13 +299,20 @@ main {
                     top: 10px;
                     left: 3%;
                     z-index: 1;
-                }        
+                }
+                
+                .image-author {
+                    top: 0;
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
 
             .form-section {
                 display: block;
                 width: 100vw;
                 height: 70vh;
                 overflow: visible;
+                
             }
 
             .form-section > div {
@@ -331,7 +338,6 @@ main {
                     }
         
                 .middle {
-                    background-color: aquamarine;
                     padding-bottom: 50px;
                     width: 100%;
                 }
@@ -361,6 +367,17 @@ main {
                         input {
                             height: 1.5rem;
                         }
+
+                        input + span {
+                            position: relative;
+                          }
+        
+                        input:required + span::after {
+                            font-size: 0.9rem;
+                            padding: 1px 5px;
+                            top: -46px;
+                            left: 69%;
+                          }
         
                 .bottom {
                     display: flex;
