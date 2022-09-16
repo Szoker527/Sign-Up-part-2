@@ -173,6 +173,11 @@ main {
                 border-color: #F535AA;
             }
 
+            .bottom button:hover {
+                color: #0fa;
+                border-color: #0fa;
+            }
+
             .bottom p {
                 font-weight: 300;
                 font-size: 1.5rem;
@@ -186,6 +191,11 @@ main {
                 color: #F535AA;
                 text-decoration: none;
             }
+
+            a:hover {
+                color: #0fa;
+            }
+
 
 /* Mobile layout */
 
