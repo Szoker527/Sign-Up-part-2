@@ -27,9 +27,17 @@ main {
             width: 100%;
             font-size: 4rem;
             font-weight: bold;
-            background-color: bisque;
+            background-color: rgba(3, 3, 2, 0.685);
+            color: white;
             padding: 1rem 0;
             top: 200px;
+        }
+
+        .logo-icon {
+            position: absolute;
+            top: 210px;
+            left: 25%;
+            z-index: 1;
         }
     
     .form-section {
@@ -129,10 +137,18 @@ main {
                     width: 100%;
                     font-size: 4rem;
                     font-weight: bold;
-                    background-color: bisque;
+                    background-color: rgba(3, 3, 2, 0.685);
+                    color: white;
                     padding: 1rem 0;
                     top: 50px;
                 }
+
+                .logo-icon {
+                    position: absolute;
+                    top: 65px;
+                    left: 3%;
+                    z-index: 1;
+                }        
 
             .form-section {
                 display: block;
