@@ -142,7 +142,7 @@ main {
                     width: 35%;
                 }
 
-                input {
+                input{
                     margin-top: 5px;
                     height: 2rem;
                     border-radius: 10px;
@@ -152,6 +152,22 @@ main {
                     font-family: 'Barlow Condensed', sans-serif;
                     font-size: 20px;
                 }
+
+                input + span {
+                    position: relative;
+                  }
+
+                input:required + span::after {
+                    font-size: 0.9rem;
+                    position: absolute;
+                    content: "required";
+                    color: #0fa;
+                    background-color: black;
+                    padding: 3px 7px;
+                    top: -59px;
+                    left: 80%;
+                    border: 1px #0fa solid;
+                  }
 
 
         .bottom {

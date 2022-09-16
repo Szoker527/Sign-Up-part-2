@@ -22,36 +22,42 @@
                 <p>Mauris placerat eleifend leo.</p>
             </div>
             <div class="middle">
-                <form action="">
+                <form action="" id="myform">
                     <h1 class="form-header">Let's do this!</h1>
                         <div>
                             <label for="first-name" class="form-label">FIRST NAME</label>
-                            <input type="text" name="first-name" id="first-name">
+                            <input type="text" name="first-name" id="first-name" required>
+                            <span></span>
                         </div>
                         <div>
                             <label for="last-name" class="form-label">LAST NAME</label>
                             <input type="text" name="last-name" id="last-name">
+                            <span></span>
                         </div>
                         <div>
                             <label for="email" class="form-label">EMAIL</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
+                            <span></span>
                         </div>                        
                         <div>
                             <label for="phone" class="form-label">PHONE NUMBER</label>
-                            <input type="number" name="phone" id="phone">
+                            <input type="tel" name="phone" id="phone">
+                            <span></span>
                         </div>
                         <div>
                             <label for="password" class="form-label">PASSWORD</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" maxlength="16" minlength="6" required>
+                            <span></span>
                         </div>
                         <div>
                             <label for="con-password" class="form-label">CONFIRM PASSWORD</label>
-                            <input type="password" name="con-password" id="con-password">
+                            <input type="password" name="con-password" id="con-password" maxlength="16" minlength="6" required>
+                            <span></span>
                         </div>
                 </form>
             </div>
             <div class="bottom">
-                <button type="button">Create Account</button>
+                <button type="submit" form="myform">Create Account</button>
                 <p>Already have an account?<span><a href="#"> Log in</a></span></p>
             </div>
         </div>
