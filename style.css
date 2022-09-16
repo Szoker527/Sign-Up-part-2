@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500&display=swap');
 
+:root {
+    --front-color: #0fa;
+    --back-color: black;
+}
+
 html {
     box-sizing: border-box;
   }
@@ -48,11 +53,11 @@ main {
                     0 0 7px #fff,
                     0 0 10px #fff,
                     0 0 21px #fff,
-                    0 0 42px #0fa,
-                    0 0 82px #0fa,
-                    0 0 92px #0fa,
-                    0 0 102px #0fa,
-                    0 0 151px #0fa;
+                    0 0 42px #F535AA,
+                    0 0 82px #F535AA,
+                    0 0 92px #F535AA,
+                    0 0 102px #F535AA,
+                    0 0 151px #F535AA;
                 }
 
                 @keyframes flicker {
@@ -61,11 +66,11 @@ main {
                     0 0 4px #fff,
                     0 0 11px #fff,
                     0 0 19px #fff,
-                    0 0 40px #0fa,
-                    0 0 80px #0fa,
-                    0 0 90px #0fa,
-                    0 0 100px #0fa,
-                    0 0 150px #0fa;
+                    0 0 40px #F535AA,
+                    0 0 80px #F535AA,
+                    0 0 90px #F535AA,
+                    0 0 100px #F535AA,
+                    0 0 150px #F535AA;
                 }
                 20%, 24%, 55% {       
                     text-shadow: none;
@@ -84,11 +89,13 @@ main {
         flex-direction: column;
         width: 60vw;
         font-family: 'Barlow Condensed', sans-serif;
+        color: var(--front-color);
+        background-color: var(--back-color);
     }
 
-    .form-section > div {
-        padding-left: 50px;
-    }
+        .form-section > div {
+            padding-left: 50px;
+        }
 
         .top {
             display: flex;
@@ -110,7 +117,6 @@ main {
             }
 
         .middle {
-            background-color: aquamarine;
             padding-bottom: 50px;
             flex: 1;
             width: 100%;
@@ -137,7 +143,14 @@ main {
                 }
 
                 input {
-                    height: 1.5rem;
+                    margin-top: 5px;
+                    height: 2rem;
+                    border-radius: 10px;
+                    border-color: #F535AA;
+                    background-color: rgb(27, 25, 25);
+                    color: #F535AA;
+                    font-family: 'Barlow Condensed', sans-serif;
+                    font-size: 20px;
                 }
 
 
@@ -154,11 +167,24 @@ main {
                 margin-top: 2rem;
                 font-weight: bold;
                 font-size: 1rem;
+                background-color: black;
+                color: #F535AA;
+                border-radius: 20px;
+                border-color: #F535AA;
             }
 
             .bottom p {
                 font-weight: 300;
                 font-size: 1.5rem;
+            }
+
+            .bottom span {
+                font-weight: 500;
+            }
+
+            .bottom a {
+                color: #F535AA;
+                text-decoration: none;
             }
 
 /* Mobile layout */
